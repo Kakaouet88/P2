@@ -16,9 +16,9 @@
             <p id="logo"><img src="images/logo/Reservia.svg" alt="logo_reservia"></p>
             <nav id="nav">
                 <ul>
-                    <li><a href="#section2">Hébergements</a></li>
-                    <li><a href="#section3">Activités</a></li>
-                    <li><a href="inscription_form">S'inscrire</a></li>
+                    <li class="navpuce"><a href="#section2">Hébergements</a></li>
+                    <li class="navpuce"><a href="#section3">Activités</a></li>
+                    <li><a href="inscription_form" id="sinscrire">S'inscrire</a></li>
                 </ul>
             </nav>            
         </header>
@@ -31,11 +31,9 @@
             </div>
             <div id="recherche">
                 <form method="post" action="traitement_recherche.php">
-                    <p>
-                        <i class="fas fa-map-marker-alt" id="mapmarker"></i>
-                        <input type="search" name="searchbox" id="searchbox" placeholder="Marseille, France..." size="20">
+                        <div id="mapmarkerblock"><i class="fas fa-map-marker-alt" id="mapmarker"></i></div>
+                        <input type="search" name="searchbox" id="searchbox" placeholder="Marseille, France..." size="37">
                         <input type="button" value="Rechercher" id="button">
-                    </p>
                 </form>    
             </div>
             <div id="filtres">
