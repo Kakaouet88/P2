@@ -131,7 +131,7 @@ nav a
 {
     #header
     {
-        height: 110px;
+        height: 105px;
         padding: 0px;
     }
 
@@ -150,10 +150,11 @@ nav a
 
     .navpuce
     {
-        padding: 0px 0px 10px 0px;
+        padding: 0px 0px 20px 0px;
         border-bottom: 3px #F2F2F2 solid;
         width: 50%;
         text-align: center;
+        margin: 0px 0px -17px 0px;
     }
 
     .navpuce:hover
@@ -240,6 +241,7 @@ form
     background: #DEEBFF;
     color: #0065FC;
     transition: 0.8s;
+    box-shadow: 3px 1px 10px rgba(128, 128, 128, 0.4);
 }
 
 input[placeholder]
@@ -252,7 +254,43 @@ input[placeholder]
 
 @media screen and (max-width: 780px)
 {
-    
+    #button
+    {
+        background-image: url(images/icons8-search-white.svg);
+        background-repeat: no-repeat;
+        background-size: 25px;
+        background-position: 10px 9px;
+        background-color: #0065FC;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        color: rgba(128, 128, 128, 0);
+        padding-left: 30px;
+        padding-right: 0px;
+        width: 50px;
+        border: none;
+        text-decoration: none;
+        font-size: 1em;
+        outline: none;
+    }
+    #recherche
+    {
+        width: 300px;
+    }
+    #searchbox
+    {
+        width: 230px;
+    }
+    #button:hover
+    {
+        background: #DEEBFF;
+        color: rgba(128, 128, 128, 0);
+        transition: 0.8s;
+        background-image: url(images/icons8-search-blue.svg);
+        background-repeat: no-repeat;
+        background-size: 60%;
+        background-position: 8px 7px;
+        box-shadow: 3px 1px 10px rgba(128, 128, 128, 0.4);
+    }
 }
 
 /* FILTRES */
