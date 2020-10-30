@@ -388,7 +388,7 @@ input[placeholder]
 {
     padding: 15px 40px 15px 40px;
     background-color: #F2F2F2;
-    margin: 10px 10px 20px 0px;
+    margin: 10px 20px 20px 0px;
     border-radius: 15px;
     max-width: 1000px;
     min-width: 520px;
@@ -532,7 +532,7 @@ input[placeholder]
 {
     padding: 15px 40px 15px 40px;
     background-color: #F2F2F2;
-    margin: 10px 10px 20px 0px;
+    margin: 10px 0px 20px 20px;
     border-radius: 15px;
     max-width: 1000px;
     min-width: 320px;
