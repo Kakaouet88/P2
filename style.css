@@ -72,7 +72,10 @@ h2
     font-size: 1.2em;
     font-weight: 800;
 }
-
+ul
+{
+    list-style-type: none;
+}
 
 /* HEADER */
 
@@ -406,7 +409,10 @@ input[placeholder]
     min-width: 250px;
     height: 230px;
     background-color: white;
-    margin: 20px 0px 20px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border-radius: 15px;
     box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.4);
 }
@@ -476,6 +482,28 @@ input[placeholder]
     font-weight: 800;
 }
 
+/* MARSEILLE 2A RESPONSIVE 680px */
+
+@media screen and (max-width: 680px)
+{
+    #section2a
+    {
+        min-width: 300px;
+    }
+    #hébergementsflexcontainer
+    {
+        flex-direction: column;
+    }
+    .hébergementcarte
+    {
+        width: auto;
+    }
+    .hébergementcarte .carteimage
+    {
+        width: 350px;
+    }
+}
+
 /* POPULAIRES SECTION2B */
 
 #section2b
@@ -511,7 +539,10 @@ input[placeholder]
     min-width: 330px;
     height: 150px;
     background-color: white;
-    margin: 20px 0px 20px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border-radius: 15px;
     box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.4);
 }
@@ -723,31 +754,26 @@ input[placeholder]
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 50px 0px 0px 0px;
+    justify-content: center;
+    margin-top: 50px;
     padding: 25px 25px 50px 25px;
     background-color: #F2F2F2;
-    height: 150px;
     background-size: 120%;
+}
+
+.subtitle
+{
+    padding-bottom: 10px;
 }
 
 #footer a:hover
 {
     text-decoration: underline;
 }
-#apropos ul, #noshébergements ul, #assistance ul
+
+#footer ul
 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-#apropos ul
-{
-    height: 140px;
-}
-#noshébergements ul, #assistance ul
-{
-    height: 100px;
+    padding: 10px 0px 0px 0px;
 }
 
 .subtitle
@@ -755,5 +781,10 @@ input[placeholder]
     font-weight: 600;
 }
 
-
+#apropos, #noshébergements, #assistance
+{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
 }
