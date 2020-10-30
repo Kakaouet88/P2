@@ -505,7 +505,7 @@ input[placeholder]
     }
 }
 
-@media screen and (max-width: 400px)
+@media screen and (max-width: 480px)
 {
     #section2a
     {
@@ -522,7 +522,7 @@ input[placeholder]
     }
     .hébergementcarte .carteimage
     {
-        width: 280px;
+       width: 250px;
     }
 }
 
@@ -626,17 +626,15 @@ input[placeholder]
 {
     #section2b
     {
-        min-width: 300px;
         margin: 10px 0px 20px 0px;
     }
 
-@media screen and (max-width: 400px)
+@media screen and (max-width: 480px)
 {
     #section2b
     {
         min-width: 270px;
         padding: 15px;
-        margin: 10px 0px 20px 0px;
     }
     #section2bheader
     {
@@ -644,7 +642,7 @@ input[placeholder]
     }
     .cartelégendepop p:last-child
     {
-        padding-top: 20px;
+        padding-top: 15px;
     }
 }
 
