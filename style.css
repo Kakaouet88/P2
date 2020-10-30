@@ -127,7 +127,7 @@ nav a
 
 /* HEADER RESPONSIVE */
 
-@media screen and (max-width: 780px)
+@media screen and (max-width: 980px)
 {
     #header
     {
@@ -252,7 +252,7 @@ input[placeholder]
 
 /* RECHERCHE RESPONSIVE */
 
-@media screen and (max-width: 780px)
+@media screen and (max-width: 980px)
 {
     #button
     {
@@ -385,9 +385,11 @@ input[placeholder]
 {
     padding: 15px 40px 15px 40px;
     background-color: #F2F2F2;
-    margin: 10px 0px 20px 0px;
+    margin: 10px 10px 20px 0px;
     border-radius: 15px;
-    max-width: 62%;
+    max-width: 1000px;
+    min-width: 520px;
+    flex: 2.6;
 }
 
 #hébergementsflexcontainer
@@ -396,16 +398,22 @@ input[placeholder]
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    flex: 1;
 }
 
 .hébergementcarte
 {
-    width: 250px;
+    min-width: 250px;
     height: 230px;
     background-color: white;
     margin: 20px 0px 20px 0px;
     border-radius: 15px;
     box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.4);
+}
+.hébergementcarte:hover
+{
+    transform: scale(1.02);
+    transition: 0.5s;
 }
 
 .carteimage
@@ -474,10 +482,11 @@ input[placeholder]
 {
     padding: 15px 40px 15px 40px;
     background-color: #F2F2F2;
-    margin: 10px 0px 20px 0px;
+    margin: 10px 10px 20px 0px;
     border-radius: 15px;
-    max-width: 40%;
-    min-width: 330px;
+    max-width: 1000px;
+    min-width: 320px;
+    flex: 1;
 }
 #section2bheader
 {
@@ -493,17 +502,23 @@ input[placeholder]
 #populairesflexcontainer
 {
     display: flex;
-    flex-direction: column;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 
 .populairecarte
 {
-    width: 330px;
+    min-width: 330px;
     height: 150px;
     background-color: white;
     margin: 20px 0px 20px 0px;
     border-radius: 15px;
     box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.4);
+}
+.populairecarte:hover
+{
+    transform: scale(1.02);
+    transition: 0.5s;
 }
 .populairecarte a
 {
@@ -566,6 +581,7 @@ input[placeholder]
     flex-direction: row;
     justify-content: space-between;
     padding: 10px 0px 0px 0px;
+    flex-wrap: wrap;
 }
 
 .activitélégende
@@ -579,6 +595,11 @@ input[placeholder]
     border: 1px solid #DEEBFF;
     box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.4);
     border-radius: 15px;
+}
+.carte:hover
+{
+    transform: scale(1.02);
+    transition: 0.5s;
 }
 .cartesolo, .carteduo
 {
@@ -647,6 +668,52 @@ input[placeholder]
 {
     background-image: url(images/activites/4_small/parc_longchamp.jpg);
     background-size: cover;
+}
+
+/* RESPONSIVE 1330 PX TAILLE CARTES */
+
+@media screen and (max-width: 980px)
+{
+    .cartesolo
+    {
+        height: 230px;
+        margin: auto;
+    }
+    .carteduo
+    {
+        width: auto;
+        margin: auto;
+        padding: 40px 0px 40px 0px;
+    }
+    .cartesolo .carte
+    {
+        height: 230px;
+        width: auto;
+    }
+    .carteduo .carte
+    {
+        width: auto;
+    }
+    .cartesolo .activitéimage
+    {
+        width: 350px;
+        height: 190px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    .carteduo .activitéimage
+    {
+        width: 350px;
+    }
+    #vieuxportimg, #calanquesimg
+    {
+        background-position-x: 0px;
+    }
+    #fortimg
+    {
+        background-position-y: -200px;
+    }
+
 }
 
 /* FOOTER */
