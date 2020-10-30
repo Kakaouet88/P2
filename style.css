@@ -360,7 +360,7 @@ input[placeholder]
 {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     max-width: 100%;
     justify-content: space-between;
 }
@@ -406,7 +406,7 @@ input[placeholder]
 
 .hébergementcarte
 {
-    min-width: 250px;
+    width: 250px;
     height: 230px;
     background-color: white;
     margin-left: auto;
@@ -482,13 +482,14 @@ input[placeholder]
     font-weight: 800;
 }
 
-/* MARSEILLE 2A RESPONSIVE 680px */
+/* MARSEILLE 2A RESPONSIVE 680px et 400px petits tels */
 
 @media screen and (max-width: 680px)
 {
     #section2a
     {
         min-width: 300px;
+        margin: 10px 0px 20px 0px;
     }
     #hébergementsflexcontainer
     {
@@ -501,6 +502,27 @@ input[placeholder]
     .hébergementcarte .carteimage
     {
         width: 350px;
+    }
+}
+
+@media screen and (max-width: 400px)
+{
+    #section2a
+    {
+        min-width: 270px;
+        padding: 15px 20px 15px 20px;
+    }
+    #hébergementsflexcontainer
+    {
+        flex-direction: column;
+    }
+    .hébergementcarte
+    {
+        width: auto;
+    }
+    .hébergementcarte .carteimage
+    {
+        width: 280px;
     }
 }
 
@@ -536,7 +558,7 @@ input[placeholder]
 
 .populairecarte
 {
-    min-width: 330px;
+    width: 330px;
     height: 150px;
     background-color: white;
     margin-left: auto;
@@ -598,6 +620,32 @@ input[placeholder]
 {
     background-image: url(images/hebergements/4_small/hotel_tout_bleu_et_blanc.jpg);
     background-size: cover;
+}
+
+@media screen and (max-width: 680px)
+{
+    #section2b
+    {
+        min-width: 300px;
+        margin: 10px 0px 20px 0px;
+    }
+
+@media screen and (max-width: 400px)
+{
+    #section2b
+    {
+        min-width: 270px;
+        padding: 15px;
+        margin: 10px 0px 20px 0px;
+    }
+    #section2bheader
+    {
+        padding: 0px 20px 0px 20px;
+    }
+    .cartelégendepop p:last-child
+    {
+        padding-top: 20px;
+    }
 }
 
 /* ACTIVITES */
@@ -745,6 +793,14 @@ input[placeholder]
         background-position-y: -200px;
     }
 
+}
+
+@media screen and (max-width: 400px)
+{
+    .cartesolo .activitéimage, .carteduo .activitéimage
+    {
+        width: 300px;
+    }
 }
 
 /* FOOTER */
