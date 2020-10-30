@@ -36,16 +36,17 @@
          url(Polices/webfontkit-20201026-085001/raleway-regular-webfont.svg) format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
+
 
 /* GENERAL */
 
 #blocpage
 {
-    width: 90%;
+    width: 95%;
     margin: auto;
 }
+
 body
 {
     font-family: 'ralewayregular';
@@ -83,10 +84,11 @@ h2
     margin-top: 30px;
     margin-bottom: 15px;
     position: sticky;
-    top: 0px;
+    top: -1px;
     background-color: white;
-    padding: 0px 70px 0px 70px;
+    padding: 10px 35px 0px 35px;
     background-size: cover;
+    height: 60px;
 }
 
 #logo img
@@ -94,11 +96,12 @@ h2
     height: 50px;
 }
 
-ul
+header ul
 {
     display: flex;
     list-style-type: none;
-    padding-bottom: 26px;
+    padding: 0px 0px 10px 0px;
+    align-items: flex-end;
 }
 
 nav a
@@ -108,18 +111,77 @@ nav a
 
 .navpuce
 {
-    margin-right: 60px;
+    padding-right: 40px;
 }
 #sinscrire
 {
     color: #0065FC;
-    font-weight: 800;
+    font-weight: bold;
 }
 
-nav a:hover
+.navpuce a:hover
 {
     border-top: 3px #0065FC solid;
     color: #0065FC;
+}
+
+/* HEADER RESPONSIVE */
+
+@media screen and (max-width: 780px)
+{
+    #header
+    {
+        height: 110px;
+        padding: 0px;
+    }
+
+    #logo
+    {
+        position: absolute;
+        top: 0px;
+        left: 20px;
+    }
+    #sinscrire
+    {
+        position: absolute;
+        top: -30px;
+        right: 20px;
+    }
+
+    .navpuce
+    {
+        padding: 0px 0px 10px 0px;
+        border-bottom: 3px #F2F2F2 solid;
+        width: 50%;
+        text-align: center;
+    }
+
+    .navpuce:hover
+    {
+        border-bottom: 3px #0065FC solid;
+    }
+
+    .navpuce:hover a
+    {
+        color: #0065FC;
+    }
+
+    .navpuce a:hover
+    {
+        border-top: none;
+    }
+
+    header ul
+    {
+        padding: 0px 0px 0px 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    #nav
+    {
+        width: 100%;
+    }
 }
 
 /* RECHERCHE */
@@ -186,6 +248,13 @@ input[placeholder]
     padding-left: 20px;
 }
 
+/* RECHERCHE RESPONSIVE */
+
+@media screen and (max-width: 780px)
+{
+    
+}
+
 /* FILTRES */
 
 #filtres
@@ -230,7 +299,7 @@ input[placeholder]
     background-color: #0065FC;
     color: white;
     padding: 16px 16px 16px 3px;
-    transition: 0.8s;
+    transition: 0.4s;
 }
 
 #info
@@ -579,4 +648,7 @@ input[placeholder]
 .subtitle
 {
     font-weight: 600;
+}
+
+
 }
